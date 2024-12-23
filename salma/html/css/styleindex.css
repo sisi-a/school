@@ -1,0 +1,135 @@
+body {
+    font-family: Arial, sans-serif;
+    direction: rtl; /* لجعل النصوص من اليمين إلى اليسار */
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #9b21956c;
+    padding: 10px 20px;
+    border-bottom: 1px solid #ffffff;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.menu-burger {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #bf75dc91;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px hwb(295 8% 23%);
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a {
+    color: rgb(253, 253, 253);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #0000006e;
+}
+
+.search-box {
+    flex-grow: 1;
+    text-align: center;
+}
+
+.search-box input[type="text"] {
+    width: 80%;
+    padding: 10px;
+    margin: 0 10px;
+    border: 1px solid #a309b893;
+    border-radius: 4px;
+}
+
+/* الكتب */
+.book-container {
+    background: rgb(253, 253, 253); /* لون خلفية الحاوية */
+    border: 1px solid #43095e; /* لون حدود الحاوية */
+    border-radius: 10px; /* زوايا دائرية للحاوية */
+    padding: 20px; /* تباعد داخلي للحاوية */
+    box-shadow: 0 4px 10px rgba(58, 1, 92, 0.212); /* ظل خفيف للحاوية */
+    margin: 20px; /* تباعد خارجي للحاوية */
+}
+
+.book-list {
+    display: flex; /* استخدام flexbox لعرض الكتب بجانب بعضها */
+    flex-wrap: wrap; /* السماح للكتب بالانتقال إلى السطر التالي إذا لم يكن هناك مساحة كافية */
+    justify-content: center; /* توسيط الكتب */
+}
+
+.book-item {
+    background: rgb(253, 253, 253);
+    border: 1px solid #43095e;
+    border-radius: 10px; /* زوايا دائرية أكثر نعومة */
+    padding: 10px;
+    margin: 10px;
+    width: 150px; /* عرض ثابت لكل كتاب */
+    box-shadow: 0 2px 5px rgba(58, 1, 92, 0.212); /* إضافة ظل خفيف*/
+    text-align: center; /* توسيط النص داخل الكتاب */
+    transition: transform 0.3s ease; /* إضافة تأثير الانتقال */
+}
+
+.book-item:hover {
+    transform: scale(1.05); /* تكبير الكتاب عند التمرير فوقه */
+}
+
+.book-item.active {
+    transform: scale(1.2); /* تكبير الكتاب عند النقر عليه */
+    z-index: 10; /* رفع الكتاب فوق العناصر الأخرى */
+}
+
+.book-item img {
+    width: 100%; /* عرض الصورة بالكامل داخل المربع */
+    height: auto; /* الحفاظ على نسبة العرض إلى الارتفاع */
+    border-radius: 10px; /* زوايا دائرية للصورة */
+}
+
+.book-item h2 {
+    margin: 10px 0 0; /* تباعد العنوان */
+    font-size: 16px; /* حجم خط العنوان */
+}
+
+footer {
+    text-align: center; /* توسيط النص */
+    padding: 10px; /* تباعد داخلي */
+    background-color: #9b2195; /* لون خلفية الفوتر */
+    color: #ffffff; /* لون النص */
+    position: relative; /* لتحديد موقع الفوتر */
+    bottom: 0; /* وضع الفوتر في الأسفل */
+    width: 100%; /* عرض الفوتر كامل */
+}
+
+footer a {
+    color: #ffffff; /* لون الروابط في الفوتر */
+    text-decoration: none; /* إزالة التسطير */
+}
+
+footer a:hover {
+    text-decoration: underline; /* إضافة تسطير عند التمرير */
+}

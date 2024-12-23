@@ -1,0 +1,72 @@
+body {
+    font-family: Arial, sans-serif;
+    direction: rtl; /* لجعل النصوص من اليمين إلى اليسار */
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* لون خلفية الصفحة */
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #9b2195; /* لون خلفية الرأس */
+    padding: 10px 20px;
+    color: #ffffff; /* لون النص */
+}
+
+.logo h1 {
+    margin: 0; /* إزالة التباعد الافتراضي */
+}
+
+nav ul {
+    list-style-type: none; /* إزالة النقاط من القائمة */
+    margin: 0; /* إزالة التباعد الافتراضي */
+    padding: 0; /* إزالة التباعد الافتراضي */
+    display: flex; /* استخدام flexbox لعرض العناصر بجانب بعضها */
+}
+
+nav ul li {
+    margin-left: 20px; /* تباعد بين العناصر */
+}
+
+nav ul li a {
+    color: #ffffff; /* لون الروابط */
+    text-decoration: none; /* إزالة التسطير */
+}
+
+nav ul li a:hover {
+    text-decoration: underline; /* إضافة تسطير عند التمرير */
+}
+
+main {
+    padding: 20px; /* تباعد داخلي */
+    text-align: center; /* توسيط النص */
+}
+
+.social-icons {
+    margin-top: 20px; /* تباعد فوق الأيقونات */
+}
+
+.social-icons a {
+    margin: 0 10px; /* تباعد بين الأيقونات */
+    display: inline-block; /* لجعل الأيقونات تتفاعل مع التحولات */
+    transition: transform 0.3s; /* تأثير الانتقال */
+}
+
+.social-icons img {
+    width: 50px; /* عرض الأيقونات */
+    height: 50px; /* ارتفاع الأيقونات */
+}
+
+.social-icons a:hover img {
+    transform: translateY(-10px) scale(1.1); /* قفز الأيقونة عند التمرير */
+}
+
+footer {
+    text-align: center; /* توسيط النص */
+    padding: 10px; /* تباعد داخلي */
+    background-color: #9b2195; /* لون خلفية الفوتر */
+    color: #ffffff; /* لون النص */
+    position: relative; /* لتحديد موقع الفوتر */
+}

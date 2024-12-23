@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>صفحة الكتاب</title>
+    <link rel="stylesheet" href="stylebook1.css"> <!-- ربط ملف CSS -->
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <a href="E:\مشروع\نهائي\index/index.html"><img src="logo.png" alt="شعار الموقع" /></a> <!-- جعل الشعار كرابط -->
+        </div>
+        <div class="search-box">
+            <input type="text" placeholder="ابحث هنا...">
+        </div>
+        <div class="dropdown">
+            <button>
+                <div class="menu-burger">
+                    <img src="F:\مشروع\نهائي/GIF/ICON/menu-burger.png" alt="القائمة" style="width: 30px; height: 30px;"> <!-- تحديد حجم الصورة -->
+                </div>
+            </button>
+            
+            <div class="dropdown-content">
+                <a href="#">تسجيل الدخول</a>
+                <a href="#">التسجيل</a>
+                <a href="#">صفحة المستخدم</a>
+                <a href="F:\مشروع\نهائي\booklist/booklist.html">الكتب</a>
+                <a href="#">تواصل معنا</a>
+            </div>
+        </div>
+    </header>
+
+<div class="book-container">
+    <h1 class="book-title" align="center">عنوان الكتاب</h1>
+    <div class="separator"></div> <!-- خط الفصل -->
+    <div class="book-content">
+        <div class="book-cover">
+            <img src="F:\مشروع\نهائي/GIF/book1.jpg" alt="غلاف الكتاب" /> <!-- استبدل cover.jpg باسم ملف صورة الغلاف -->
+        </div>
+        <div class="book-info">
+            
+            <p><strong>مسميات أخرى:</strong> مثال على مسميات أخرى.</p>
+            <p><strong>الكاتب:</strong> اسم الكاتب.</p>
+            <p><strong>الرسام:</strong> اسم الرسام.</p>
+            <p><strong>التصنيفات:</strong> التصنيفات المختلفة.</p>
+            <p><strong>الأصل:</strong> أصل الكتاب.</p>
+            <p><strong>المصدر:</strong> مصدر الكتاب.</p>
+            <p><strong>تاريخ النشر:</strong> تاريخ نشر الكتاب.</p>
+            <p><strong>حالة القصة:</strong> حالة القصة.</p>
+            <p><strong>حالة الترجمة:</strong> حالة الترجمة.</p>
+            <p><strong>القصة:</strong> هذه فقرة تحتوي على ملخص أو نص القصة.</p>
+        </div>
+    </div>
+
+    <!-- إضافة الأيقونات كأزرار هنا مباشرة تحت الصورة -->
+    <div class="icons">
+        <div class="icon" onclick="incrementCount(this)">
+            <img src="F:\مشروع\نهائي/GIF/ICON/star.png" alt="مميز" /> <!-- استبدل star.png باسم ملف أيقونة النجمة -->
+            <p>0</p>
+        </div>
+        <div class="icon" onclick="incrementCount(this)">
+            <img src="F:\مشروع\نهائي/GIF/ICON/heart-upside-down.png" alt="أحب" /> <!-- استبدل heart.png باسم ملف أيقونة القلب -->
+            <p>0</p>
+        </div>
+        <div class="icon" onclick="incrementCount(this)">
+            <img src="F:\مشروع\نهائي/GIF/ICON/social-network.png" alt="أعجبني" /> <!-- استبدل like.png باسم ملف أيقونة الإعجاب -->
+            <p>0</p>
+        </div>
+        <div class="icon" onclick="incrementCount(this)">
+            <img src="F:\مشروع\نهائي/GIF/ICON/calendar-clock.png" alt="مشاهدة لاحقاً" /> <!-- استبدل calendar.png باسم ملف أيقونة التقويم -->
+            <p>0</p>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>جميع الحقوق محفوظة &copy; 2023</p>
+    <p>تواصل معنا عبر: 
+        <a href="mailto:info@example.com">info@example.com</a>
+    </p>
+</footer>
+
+<script src="scriptbook1.js"></script> <!-- ربط ملف JavaScript -->
+</body>
+</html>
